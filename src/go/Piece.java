@@ -14,12 +14,12 @@ public class Piece {
 	BufferedImage image;
 	private int x;
 	private int y;
-	private int d = 40;
+	private int d = 38;
 	private boolean isWhite = true;
 	public Piece(int x, int y,boolean isWhite) {
 		super();
-		this.x = x - d/2;
-		this.y = y - d/2;
+		this.x = x - 19;
+		this.y = y - 19;
 		this.isWhite = isWhite;
 	}
 	public int getX() {
@@ -39,6 +39,9 @@ public class Piece {
 	}
 	public void setWhite(boolean isWhite) {
 		this.isWhite = isWhite;
+	}
+	public int getD(){
+		return d;
 	}
 	/**
 	 * 绘制
